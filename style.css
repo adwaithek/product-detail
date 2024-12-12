@@ -79,6 +79,7 @@ body {
 
 .product_main{
   display: flex;
+    gap:12px;
 }
 }
 
