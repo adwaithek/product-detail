@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="./style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carousel with Product Info</title>
-   
+  <title> product </title>
+
 </head>
+
 <body>
   <div class="main-container">
     <div class="product_main">
-    <div class="carousel">
-      <div class="main-image-container">
-        <img id="main-image" class="main-image" src="" alt="Main Image">
-        <button id="prev-arrow" class="arrow left-arrow">&#8249;</button>
-        <button id="next-arrow" class="arrow right-arrow">&#8250;</button>
-      </div>
-      <div id="thumbnails" class="thumbnails"></div>
-    </div>
-
-    <!-- Product Info Section -->
-    <div class="product-info">
-      <h1>Awesome Product</h1>
-      <p class="price">$99.99</p>
-      <p class="description">
-        This is a high-quality product designed to meet all your needs. Choose your size and add it to your cart now!
-      </p>
-
-      <!-- Variant Selector -->
-      <label for="variant-selector">Choose Size:</label>
-      <select id="variant-selector">
-        <option value="Small">Small</option>
-        <option value="Medium">Medium</option>
-        <option value="Large">Large</option>
-      </select>
-
-      <!-- Quantity Selector -->
-      <div class="quantity-container">
-        <label for="quantity-selector">Quantity:</label>
-        <button id="decrease-btn">-</button>
-        <input type="number" id="quantity-selector" min="1" value="1">
-        <button id="increase-btn">+</button>
+      <div class="carousel">
+        <div class="main-image-container">
+          <img id="main-image" class="main-image" src="" alt="Main Image">
+          <button id="prev-arrow" class="arrow left-arrow">&#8249;</button>
+          <button id="next-arrow" class="arrow right-arrow">&#8250;</button>
+        </div>
+        <div id="thumbnails" class="thumbnails"></div>
       </div>
 
-      <!-- Add to Cart Button -->
-      <button id="add-to-cart-btn">Add to Cart</button>
+      <!-- Product Info   -->
+      <div class="product-info">
+        <h1>Sample Product</h1>
+        <p class="price">$99.99</p>
+        <p class="description">
+          This is a high-quality product designed to meet all your needs. Choose your size and add it to your cart now!
+        </p>
 
-     <div id="confirmation-message" class="hidden"></div>
-  
-       
-    </div>
+        <!-- Variant Selector -->
+        <div class="variant-selector">
+          <span>Choose Size:</span>
+          <div id="variant-options">
+            <button class="variant-option active" data-value="Small">S</button>
+            <button class="variant-option" data-value="Medium">M</button>
+            <button class="variant-option" data-value="Large">L</button>
+          </div>
+        </div>
+
+        <!-- Quantity Selector -->
+        <div class="quantity-container">
+          <label for="quantity-selector">Quantity:</label><br>
+          <div class="quantity-input-container">
+            <button id="decrease-btn">-</button>
+            <input type="number" id="quantity-selector" min="1" value="1">
+            <button id="increase-btn">+</button>
+          </div>
+        </div>
+
+        <!-- Add to Cart Button -->
+        <button id="add-to-cart-btn">Add to Cart</button>
+
+        <!-- Modal -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="close-modal" class="close">X</span>
+    <p id="modal-message"></p>
+  </div>
+</div>
+
+
+      </div>
     </div>
   </div>
-  
-  
-  
+
+
+
   <script src="script.js"></script>
 
-  
+
 </body>
+
 </html>
-
- 
- 
-
- 
